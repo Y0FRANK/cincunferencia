@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graficador de Circunferencias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-area">
+            <h2>Datos de la Circunferencia</h2>
+            <label for="x">Centro X:</label>
+            <input type="number" id="x" value="0">
+            <label for="y">Centro Y:</label>
+            <input type="number" id="y" value="0">
+            <label for="radio">Radio:</label>
+            <input type="number" id="radio" value="50">
+            <button id="dibujar">Dibujar</button>
+            <button id="reset">Restablecer</button>
+        </div>
+        <canvas id="canvas" width="400" height="400"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

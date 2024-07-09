@@ -1,0 +1,86 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-area {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#reset {
+  background-color: #f44336;
+}
+
+#reset:hover {
+  background-color: #d32f2f;
+}
+
+#canvas {
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  position: relative; /* Para colocar el plano cartesiano encima */
+}
+
+.ejes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  stroke: #000;
+  stroke-width: 1px;
+}
+
+.ejes .x {
+  stroke-dasharray: 5 5; /* Línea punteada para el eje X */
+  x1: 0;
+  y1: 0;
+  x2: 400;
+  y2: 0; 
+}
+
+.ejes .y {
+  stroke-dasharray: 5 5; /* Línea punteada para el eje Y */
+  x1: 0;
+  y1: 0;
+  x2: 0;
+  y2: 400;
+}
